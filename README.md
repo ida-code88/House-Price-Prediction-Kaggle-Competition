@@ -8,6 +8,14 @@ I am a beginner at Kaggle and this is my first competition ever in Data Science.
 
 * Multivariate Study: By understanding the relationship between variables on our data, we will be able to get an insight into our data. We then have a choice to only select the variables that we find important in building the algorithm and ignore the others or use them as a whole. It will be easier for us to build code for any project.
 
+Steps:
+
+1. Load the data and do feature selection (drop columns with excessive amount of null value)
+2. Investigate terget variable: here I found that the target variable does not follow normal distribution, so it need to be converted to normal distribution
+3. Investigate numeric variables: Using heatmap, it is revealed that OverallQual, GrLivArea, GarageCars, GarageArea, TotalBsmtSF, 1stFlrSF, FullBath, TotRmsAbvGrd, YearBuilt, YearRemodAdd are features that have the strongest correaltion with target feature which is SalePrice
+4. Investigate categorical variables:
+
+
 ### Data Cleaning: 
 
 I think it is universally accepted why data cleaning is a must-do step before ml analysis. So I am not going to explain it here.
@@ -15,3 +23,5 @@ I think it is universally accepted why data cleaning is a must-do step before ml
 ### Apply Machine Learning
 
 As we know, the dependent or target variable is numeric. For this case, regression comes to action. I will use the regression models that I am more familiar with.
+
+
